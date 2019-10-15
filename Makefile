@@ -28,4 +28,3 @@ linux:
 	make x
 	mv m2000 m2000x
 	make clean
-	make svga
