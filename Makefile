@@ -19,6 +19,10 @@ msdos:
 clean:
 	rm -f *.o *~
 
+distclean:
+	make clean
+	rm -f z80dasm fontc m2000x splitape
+
 linux:
 	make clean
 	make x
