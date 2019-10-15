@@ -290,9 +290,9 @@ int InitMachine(void)
  DefaultGC=DefaultGCOfScreen (Scr);
  DefaultCMap=DefaultColormapOfScreen (Scr);
  bpp=DefaultDepthOfScreen (Scr);
- if (bpp!=8 && bpp!=16 && bpp!=32)
+ if (bpp!=8 && bpp!=16 && bpp!=24 && bpp!=32)
  {
-  printf ("FAILED - Only 8,16 and 32 bpp displays are supported\n");
+  printf ("FAILED - Only 8,16,24 and 32 bpp displays are supported\n");
   return 0;
  }
  if (bpp==32 && sizeof(unsigned)!=4)
