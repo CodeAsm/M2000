@@ -12,7 +12,7 @@
 CC	= gcc	# C compiler used
 LD	= gcc	# Linker used
 
-CFLAGS  = -Wall -m486 -fomit-frame-pointer -O2 \
+CFLAGS  = -Wall -fomit-frame-pointer -O2 \
 	  -DLSB_FIRST -DHAVE_FTRUNCATE -DHAVE_CLOCK -DLINUX_SVGA \
 	  -DX86_ASM -DJOYSTICK -DSOUND
 LFLAGS  = -s
