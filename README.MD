@@ -23,7 +23,7 @@ How to compile?
 If you're on a *NIX, it could be as easy as typing
 
 ```
-make linux
+make x
 ```
 
 For MacOS its suggested (by tekstavonturier on retroforum.nl/) to try

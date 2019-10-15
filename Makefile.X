@@ -23,7 +23,7 @@ LD	= gcc	# Linker used
 
 CFLAGS  = -Wall -fomit-frame-pointer -O2 -I/usr/X11/include \
 	  -DLSB_FIRST -DHAVE_FTRUNCATE -DHAVE_CLOCK -DUNIX_X \
-	  -DSOUND -DMITSHM
+	  -DSOUND -DMITSHM -D__64BIT__
 
 LFLAGS	= -s -L/usr/X11/lib
 
