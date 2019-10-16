@@ -1,15 +1,13 @@
 
 # **M2000** #
 
-
-
 What is M2000?
 =============
 
 M2000 is a portable emulator for the P2000 home computer, written by Marcel de Kogel. 
 More information about the original author, contact details and original source can be found here: [http://www.komkon.org/~dekogel/m2000.html] 
 
-Because I (CodeAsm, Nico) couldn't find any more recent emulators then MAME (wich uses Marcels code) and just wanted to run a emulator for this system, I decided to publish my changes to make it work on modern Linux. Im sure its not a perfect modification and also sure I dont follow GNU code standards nor do I know if Im able to maintain this.
+I (CodeAsm, Nico) couldn't find any more recent emulators then MAME (wich uses Marcels code) and just wanted to run a emulator for this system, I decided to publish my changes to make it work on modern Linux. Im sure its not a perfect modification and also sure I dont follow GNU code standards nor do I know if Im able to maintain this.
 
 Thats why I just publish my changes and maybe others could add their thoughts or ideas here on github so we all can make this emulator alive and kicking. And so maybe one day be worthy to send a message back in time, I mean to Marcel and/or the community that their beloved System got some new emulator love.
 
@@ -105,7 +103,7 @@ m.dekogel at student dot utwente dot nl
 This github version and small adjustments are made by CodeAsm, also known as Nico Vijlbrief
 If you have trouble with the source listed here, first contact me. unless the problem is also in the original source.
 If you fork this code, please atleast contribute back by contacting Marcel.
-15-10-2019 
+16-10-2019 
 Twitter: [CodeAsm_](https://twitter.com/CodeAsm_)
 youtube: [codeasm](https://www.youtube.com/codeasm)
 github: [codeasm](https://github.com/codeasm)
