@@ -58,6 +58,7 @@ Where can I find out more?
 * [Alott of original scanned documents about the P2000 system](http://electrickery.xs4all.nl/comp/p2000c/doc/)
 * [Dutch forum with recent activity and information](https://www.retroforum.nl/topic/3914-philips-p2000t/)
 * [Collection of floppydisk images(maybe compatible)](https://fjkraan.home.xs4all.nl/comp/p2000c/floppyImages/)
+* [A software preservation project including sources to this emulator](https://github.com/p2000t/)
 
 Plans for the future
 =============
