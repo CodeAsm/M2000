@@ -36,7 +36,7 @@ static char *Options[]=
   "verbose","help","cpuspeed","ifreq","t","m",
   "sound","joystick","romfile","uperiod","trap","printertype",
   "printer","font","tape","boot","volume","ram","sync","shm",
-  "savecpu","video",
+  "savecpu","video","cart",
   NULL
 };
 #define AbvOptions      Options         /* No abrevations yet */
@@ -238,6 +238,12 @@ static int ParseOptions (int argc,char *argv[])
     case 21: N++;
              if (N<argc)
               videomode=atoi(argv[N]);
+             else
+              misparm=1;
+             break;
+    case 22: N++;
+             if (N<argc)
+              CartName=argv[N];
              else
               misparm=1;
              break;

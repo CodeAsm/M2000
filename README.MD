@@ -67,6 +67,9 @@ Might savestates be helpfull? a Retroarch core? Some people might do it overnigh
 
 There is a place and time for everything but atleast im happy it runs again.
 
+I would also like to know why there are 3 patches applied to the rom and if I could contruct a ROM with BASIC included.
+For My P2000T doesnt have a working BIOS anymore and I dont expect me to have other software that fast (maybe add a switch later)
+
 Contributing and copyright
 =============
 Most of the included source comes with the following header
