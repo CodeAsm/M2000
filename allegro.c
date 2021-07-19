@@ -334,8 +334,10 @@ int InitMachine(void)
 
   for (i=4096;i>=128;i/=2)
     if (i*IFreq<=44100) break;
-    sample_rate=i*IFreq;
- if (Verbose) printf ("%d Hz...",sample_rate);
+  sample_rate=i*IFreq;
+
+  if (Verbose) printf ("%d Hz...",sample_rate);
+ 
  /* The actual sampling rate might be different from the optimal one.
     Here we calculate the optimal buffer size */
  buf_size=sample_rate/IFreq;
@@ -629,7 +631,6 @@ if ((!soundoff)&&(sound_active)) {
 		if (event.type == ALLEGRO_EVENT_DISPLAY_CLOSE)
 			Z80_Running=0;
 		if (event.type == ALLEGRO_EVENT_AUDIO_STREAM_FRAGMENT) {
-		   
 		   al_set_audio_stream_fragment(stream, playbuf);
 		}
 	}
