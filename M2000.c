@@ -57,10 +57,14 @@ extern int SaveCPU;
 extern int videomode;
 
 static int  CpuSpeed;
+#ifdef ALLEGRO
+#include <allegro5/allegro.h>
+#endif
+// Odd Allegro implementations have (had?) _argc _argv already declared (!?!??)
 static int  _argc;
 static char *_argv[256];
-static char MainConfigFile[MAX_CONFIG_FILE_SIZE];
-static char SubConfigFile[MAX_CONFIG_FILE_SIZE];
+static unsigned char MainConfigFile[MAX_CONFIG_FILE_SIZE];
+static unsigned char SubConfigFile[MAX_CONFIG_FILE_SIZE];
 static char szTempFileName[MAX_FILE_NAME];
 static char _CartName[MAX_FILE_NAME];
 static char CartNameNoExt[MAX_FILE_NAME];
@@ -68,6 +72,14 @@ static char _ROMName[MAX_FILE_NAME];
 static char ProgramPath[MAX_FILE_NAME];
 
 #ifndef MSDOS
+/* Get full path name, convert all backslashes to UNIX style slashes */
+static void _fixpath (char *old,char *new)
+{
+ strcpy (new,old);
+}
+#endif
+
+#ifdef _WIN32
 /* Get full path name, convert all backslashes to UNIX style slashes */
 static void _fixpath (char *old,char *new)
 {
@@ -318,7 +330,7 @@ static void LoadConfigFile (char *szFileName,unsigned char *ptr)
    ++ptr;
   if (*ptr)
   {
-   _argv[_argc++]=ptr;
+   _argv[_argc++]=(char *)ptr;
    while (*ptr && *ptr>' ')
     ++ptr;
    if (*ptr)
